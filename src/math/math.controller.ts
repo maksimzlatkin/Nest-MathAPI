@@ -4,7 +4,7 @@ import { MathService } from "./math.service"
 
 @Controller('square')
 export class SquareController {
-    private math = new MathService();
+  private math = new MathService();
 
   @Get(':num')
   getSquare(@Param('num') num : number){
